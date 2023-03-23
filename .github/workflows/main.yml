@@ -1,0 +1,29 @@
+- name: GitHub Pages Deploy
+  # You may pin to the exact commit or the version.
+  # uses: appleboy/gh-pages-action@fffb0030bac4fd166320d35bed6532b3b64969bb
+  uses: appleboy/gh-pages-action@v0.0.2
+  with:
+    # username
+    username: # optional
+    # password
+    password: # optional
+    # git upstream to target
+    upstream_name: # optional, default is origin
+    # git branch to target
+    target_branch: # optional, default is gh-pages
+    # temporary directory for pages pull
+    temporary_base: # optional, default is .tmp
+    # directory of content to publish
+    pages_directory: # optional, default is docs
+    # directory of content to sync
+    target_directory: # optional
+    # exclude files matching PATTERN
+    exclude: # optional
+    # git author name
+    commit_author: # optional, default is GitHub Action
+    # git author email
+    commit_author_email: # optional, default is github-action@users.noreply.github.com
+    # git remote url
+    remote_url: # optional
+    # git clone path
+    workspace: # optional

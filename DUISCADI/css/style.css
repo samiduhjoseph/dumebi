@@ -938,14 +938,14 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
     }
     .quote__scroll1{
         margin-left: 0rem;
-        gap: .7rem;
+        gap: .4rem;
     }
     .quote__scroll2{
         margin-left: 0rem;
-        font-size: 0.7rem;
+        /* font-size: 0.7rem; */
     }
     .quote-scroll-text{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin-left: 0rem;
     }
 }

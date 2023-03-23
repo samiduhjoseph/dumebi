@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Antic+Slab&family=Chakra+Petch:wght@400;600;700&family=Cinzel:wght@500;600&family=Exo:wght@400;600&family=Forum&family=Ubuntu:wght@300;400;500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+
+  }
 :root{
     --primary_color_1:#336899;
     --primary_color_2:#BF0000;
@@ -434,6 +438,10 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
     color: white;
 }
 @media (max-width:600px) {
+    .venue{
+        border-radius: 13px;
+        margin: 10px;
+    }
     .venue div{
         display: flex;
         flex-direction: column;
@@ -625,6 +633,11 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
         /* flex-wrap: wrap; */
         padding: 1rem;
         gap: 2rem;
+    
+    }
+    .speaker-container{
+        border-radius: 13px;
+        margin: 3rem 10px 0;
     }
     .speaker-img-wrapper{
         width: 180px;
@@ -640,9 +653,6 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
     .speaker__desc{
         align-self: center;
         max-width: 15ch;
-    }
-    .speaker-container{
-        /* gap: 2rem; */
     }
 
 }
@@ -831,7 +841,7 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
     color: var(--primary_color_3);
 }
 .quote-scroll-text{
-    font-size:clamp(.8rem, 1.5vw, 1.4rem);
+    font-size:clamp(.6rem, 1.5vw, 1.4rem);
     text-transform: uppercase;
     font-family: var(--font_chakra);
     font-weight: 900;
@@ -910,6 +920,9 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
     .quote{
         padding: 1.5rem;
     }
+    .quote-background{
+        border-radius: 13px;
+    }
 }
 @media (max-width:440px) {
     .swiper{
@@ -954,7 +967,7 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
    margin-bottom: 3rem;
 }
 .swiper2{
-    width: 100vw;
+    width: 100%;
     height: 500px;
     margin:0px !important ;
     padding: 0rem !important;
@@ -963,6 +976,9 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
     /* background:linear-gradient(to right, #000000 , #0000003f, rgb(0, 0, 0) ), url(../img/contact1.jpg); */
     /* background: linear-gradient(139.63deg, #336899 .33%,#0000005b 23.16%,#0000 51%,#3d1f6000 55.17%,#00000044 82.17%,#336899 102.19%),#000; */
 }
+.swiper2 .swiper-slide{
+    overflow: hidden;
+}
 .gallary-img{
     width: 550px !important;
     height: 400px !important;
@@ -970,6 +986,7 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
     object-fit: contain;
     border: 3px solid black ;
     padding: 20px !important;
+
 }
 .gallary-top-desc{
     border: 2px solid var(--primary_color_2b);
@@ -1003,7 +1020,7 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
 }
 @media (max-width:450px) {
     .gallary-img{
-        width: 400px !important;
+        width: 250px !important;
         
     }
     .swiper2{
@@ -1081,7 +1098,7 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
 }
 .contact-form legend{
     font-family: var(--font_chakra);
-    font-size: 1rem;
+    font-size:clamp(0.8rem, 1.5vw, 1rem);
     padding: 0px 4px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -1289,12 +1306,14 @@ background: linear-gradient(to left, #ffa751, #ffe259); /* W3C, IE 10+/ Edge, Fi
 }
 .contribution__text1{
     font-size:clamp(0.7rem, 2vw, 0.8rem);
+    line-height: 1.5;
     text-transform: capitalize;
 }
 .contribution__text3{
     font-size:clamp(0.7rem, 2vw, 0.8rem);
     font-family: var(--font_chakra);
     letter-spacing: 2px;
+    line-height: 1.5;
     font-weight: 500;
 }
 .contribution__text1 a{

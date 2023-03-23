@@ -28,8 +28,49 @@ const swiper = new Swiper('.swiper',{
   
   });
 
-ScrollReveal({ reset: true });
-ScrollReveal().reveal('.about-background', {delay: 400});
+  const swiper2 = new Swiper('.swiper2',{
+	// Optional parameters
+	direction: 'horizontal',
+	loop: true,
+
+	autoplay: {
+		delay: 2000,
+	  },
+  
+	// Navigation arrows
+	navigation: {
+	  nextEl: '.swiper-button-next',
+	  prevEl: '.swiper-button-prev',
+	},
+  
+	breakpoints: {
+		// when window width is >= 320px
+		// 320: {
+		//   slidesPerView: 1,
+		//   spaceBetween:0 ,
+		// },
+		// when window width is >= 480px
+		700: {
+		  slidesPerView: 2,
+		  spaceBetween: 30,
+		},
+		// when window width is >= 640px
+		1000: {
+		  slidesPerView: 3,
+		  spaceBetween: 40,
+		},
+		// 1400:{
+		// 	slidesPerView:3,
+		// }
+	  }
+  });	
+
+
+// ScrollReveal({ reset: true });
+ScrollReveal().reveal('.about-background', {
+	delay: 400,
+	reset: 'true',
+});
 
 ScrollReveal().reveal('.speaker-container', { 
 	// distance: '100px',
@@ -39,7 +80,7 @@ ScrollReveal().reveal('.speaker-container', {
 	scale:'0.5',
 	duration: 400,
 	easing: 'ease-out',
-	// reset: 'true',
+	reset: 'true',
 
 });
 // ScrollReveal().reveal('.quote-margin', { delay: 500 });
@@ -56,8 +97,8 @@ ScrollReveal().reveal('.quote-margin', {
     // reset: true
 });
 ScrollReveal().reveal('.about-animate1', {
-	distance: '100px',
-	origin: 'left',
+	// distance: '100px',
+	// origin: 'left',
     delay: 500,
     // duration: 700,
 	easing: 'ease-out',
@@ -66,8 +107,8 @@ ScrollReveal().reveal('.about-animate1', {
     // reset: true
 });
 ScrollReveal().reveal('.about-animate2', {
-	distance: '100px',
-	origin: 'right',
+	// distance: '100px',
+	// origin: 'right',
     delay: 500,
     // duration: 700,
 	easing: 'ease-out',
@@ -101,7 +142,6 @@ ScrollReveal().reveal('.footer-background', {
 	easing: 'ease-out',
 	reset: 'true'
 	
-    // reset: true
 });
 ScrollReveal().reveal('.contact-container', {
 	// distance: '100px',
@@ -115,40 +155,4 @@ ScrollReveal().reveal('.contact-container', {
     // reset: true
 });
 
-
-const swiper2 = new Swiper('.swiper2',{
-	// Optional parameters
-	direction: 'horizontal',
-	loop: true,
-
-	autoplay: {
-		delay: 2000,
-	  },
-  
-	// Navigation arrows
-	navigation: {
-	  nextEl: '.swiper-button-next',
-	  prevEl: '.swiper-button-prev',
-	},
-  
-	breakpoints: {
-		// when window width is >= 320px
-		320: {
-		  slidesPerView: 1,
-		  spaceBetween: 10,
-		},
-		// when window width is >= 480px
-		700: {
-		  slidesPerView: 2,
-		  spaceBetween: 30,
-		},
-		// when window width is >= 640px
-		1000: {
-		  slidesPerView: 3,
-		  spaceBetween: 40,
-		},
-		// 1400:{
-		// 	slidesPerView:3,
-		// }
-	  }
-  });	  
+	  
